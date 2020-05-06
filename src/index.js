@@ -8,7 +8,7 @@ import Home from './Home';
 const theme = createMuiTheme({
   palette: {
     primary: { main: "#009688" },
-    // secondary: { main: "#F1B929" },
+    secondary: { main: "#004d40" },
     type: "dark"
   }
 });

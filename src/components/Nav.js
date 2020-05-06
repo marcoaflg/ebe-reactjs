@@ -8,7 +8,6 @@ import SearchIcon from '@material-ui/icons/Search';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { createMuiTheme } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -99,7 +98,9 @@ export default function SearchAppBar() {
                             alt="USA" /></MenuItem>
                     </Menu>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        <img src={process.env.PUBLIC_URL + "./img/logoebevetor1.png"} alt="logo" />
+                        <a href="#" onClick={<img src={process.env.PUBLIC_URL + "./img/logoebevetor1.png"} alt="logo" />}>
+                            <img src={process.env.PUBLIC_URL + "./img/logoebevetor1.png"} alt="logo" />
+                        </a>
                     </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
@@ -114,6 +115,8 @@ export default function SearchAppBar() {
                             inputProps={{ 'aria-label': 'search' }}
                         />
                     </div>
+                    <Button>Entrar</Button>
+                    <Button>Cadastrar</Button>
                 </Toolbar>
             </AppBar>
         </div>
