@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './_index.scss';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Home from './Home';
@@ -18,7 +18,7 @@ ReactDOM.render(
   <MuiThemeProvider theme={theme}>
     <React.Fragment>
       <CssBaseline />
-      <Home />
+        <Home />
     </React.Fragment>
   </MuiThemeProvider>,
   document.getElementById('root')

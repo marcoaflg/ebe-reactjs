@@ -1,0 +1,9 @@
+$font_family_1: sans-serif;
+$font_family_2: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font_family_1;
+	background: "#dfdfdf";
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import './Home.css';
+import './_home.scss';
 import Nav from './components/Nav'
-import SwipeableTextMobileStepper from './components/Slider'
+import Slider from './components/Slider'
 import Footer from './components/Footer'
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
     <div className="Home">
       <>
         <Nav />
-        <SwipeableTextMobileStepper />
+        <Slider />
         <Footer />
       </>
     </div>

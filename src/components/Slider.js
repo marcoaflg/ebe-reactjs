@@ -45,6 +45,8 @@ const styles = theme => ({
     root: {
         maxWidth: 1500,
         flexGrow: 1,
+        marginLeft: 750,
+
     },
     header: {
         display: 'flex',
@@ -62,7 +64,7 @@ const styles = theme => ({
     },
 });
 
-class SwipeableTextMobileStepper extends React.Component {
+class Slider extends React.Component {
     state = {
         activeStep: 0,
     };
@@ -108,7 +110,7 @@ class SwipeableTextMobileStepper extends React.Component {
                 </AutoPlaySwipeableViews>
                 <MobileStepper
                     steps={maxSteps}
-                    position="static"
+                    position=""
                     activeStep={activeStep}
                     className={classes.mobileStepper}
                     nextButton={
@@ -120,7 +122,6 @@ class SwipeableTextMobileStepper extends React.Component {
                     backButton={
                         <Button size="small" onClick={this.handleBack} disabled={activeStep === 0}>
                             {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-
                         </Button>
                     }
                 />
@@ -128,9 +129,9 @@ class SwipeableTextMobileStepper extends React.Component {
         );
     }
 }
-SwipeableTextMobileStepper.propTypes = {
+Slider.propTypes = {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(SwipeableTextMobileStepper);
+export default withStyles(styles, { withTheme: true })(Slider);
