@@ -45,8 +45,7 @@ const styles = theme => ({
     root: {
         maxWidth: 1500,
         flexGrow: 1,
-        marginLeft: 750,
-
+        margin: 'auto',
     },
     header: {
         display: 'flex',
