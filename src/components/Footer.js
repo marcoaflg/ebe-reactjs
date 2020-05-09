@@ -1,5 +1,9 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 var style = {
     backgroundColor: "#009688",
@@ -18,7 +22,7 @@ var phantom = {
     width: '100%',
 }
 
-function Footer({ children }) {
+export default function Footer({ children }) {
     return (
 
         <div>
@@ -26,11 +30,13 @@ function Footer({ children }) {
             <Box boxShadow={3}>
                 <div style={style}>
                     {children}
+                    <WhatsAppIcon ontSize="large" style={{ fontSize: 40 }} />
+                    <FacebookIcon ontSize="large" style={{ fontSize: 40 }} />
+                    <InstagramIcon ontSize="large" style={{ fontSize: 40 }} />
+                    <TwitterIcon ontSize="large" style={{ fontSize: 40 }} />
                 </div>
             </Box>
         </div>
 
     )
 }
-
-export default Footer

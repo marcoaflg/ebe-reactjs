@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './_index.scss';
+import '../src/styles/_index.scss';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Home from './Home';
+import Home from './pages/Home';
 
 
 const theme = createMuiTheme({
