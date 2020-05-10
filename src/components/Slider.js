@@ -60,6 +60,7 @@ const styles = theme => ({
         maxWidth: 1500,
         overflow: 'hidden',
         width: '100%',
+        paddingTop: 30,
     },
 });
 
@@ -90,9 +91,9 @@ class Slider extends React.Component {
         const maxSteps = tutorialSteps.length;
         return (
             <div className={classes.root}>
-                <Paper square elevation={0} className={classes.header}>
+                {/* <Paper square elevation={0} className={classes.header}>
                     <Typography>{tutorialSteps[activeStep].label}</Typography>
-                </Paper>
+                </Paper> */}
                 <AutoPlaySwipeableViews
                     axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                     index={activeStep}
