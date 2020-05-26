@@ -97,7 +97,7 @@ export default function SearchAppBar() {
                             alt="USA" /></MenuItem>
                     </Menu>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        <a href="#" onClick={<img src={process.env.PUBLIC_URL + "./img/logoebevetor1.png"} alt="logo" />}>
+                        <a href="/" onClick={<img src={process.env.PUBLIC_URL + "./img/logoebevetor1.png"} alt="logo" />}>
                             <img src={process.env.PUBLIC_URL + "./img/logoebevetor1.png"} alt="logo" />
                         </a>
                     </Typography>
